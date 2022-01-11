@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Summathy</title>
+	<link rel="stylesheet" type="text/css" href="backend/style.css" />
+</head>
 <body>
-<h1>The Summathy Blog - Under construction</h1>
-<a href="temp/index.html"> Link to Temp </a>
+	<div id="content">
+		<h1>The Summathy Blog - Under construction</h1>
+		<a href="temp/index.html"> Link to Temp </a>
+		<button class="btn-toggle" onclick="
+			const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+			if (prefersDarkScheme.matches) {
+				document.body.classList.toggle('light-theme');n
+			} else {
+				document.body.classList.toggle('dark-theme');
+			}
+		">Toggle Light- and Dark Mode</button>
+	</div>
 </body>
 </html>

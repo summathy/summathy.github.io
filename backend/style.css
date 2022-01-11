@@ -1,0 +1,27 @@
+/* === Light- and Dark-Mode === */
+
+/* TODO link + environment colors */
+
+/* default colors */
+body{
+	color:  #222;
+	background-color:  #fff;
+}
+/* dark-mode colors */
+body.dark-theme{
+	color:  #eee;
+	background-color:  #121212;
+}
+/* in case user has dark-mode at OS-level */
+@media(prefers-color-scheme:  dark){
+	/* default colors */
+	body{
+		color:  #eee;
+		backgroud-color:  #121212;
+	}
+	/* light-mode colors */
+	body.light-theme{
+		color:  #222;
+		background-color:  #fff;
+	}
+}
