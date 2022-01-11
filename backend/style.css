@@ -17,7 +17,7 @@ body.dark-theme{
 	/* default colors */
 	body{
 		color:  #eee;
-		backgroud-color:  #121212;
+		background-color:  #121212;
 	}
 	/* light-mode colors */
 	body.light-theme{
