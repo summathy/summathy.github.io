@@ -5,23 +5,71 @@
 /* default colors */
 body{
 	color:  #222;
-	background-color:  #fff;
+	background-color:  #ddd;
 }
+#content{
+	background-color: #fff;
+}
+
 /* dark-mode colors */
 body.dark-theme{
-	color:  #eee;
-	background-color:  #121212;
+	color:  #ddd;
+	background-color:  #000;
 }
+#content.dark-theme{
+	background-color: #262626;
+}
+
 /* in case user has dark-mode at OS-level */
 @media(prefers-color-scheme:  dark){
 	/* default colors */
 	body{
-		color:  #eee;
-		background-color:  #121212;
+		color:  #ddd;
+		background-color:  #000;
 	}
+	#content{
+		background-color: #262626;
+	}
+
 	/* light-mode colors */
 	body.light-theme{
 		color:  #222;
 		background-color:  #fff;
 	}
+	#content.light-theme{
+		background-color: #fff;
+	}
+}
+
+
+
+/* === div stuff === */
+#navigation{
+	max-width: 1024px;
+
+	margin: auto;
+
+	padding: 1em;
+
+	text-align: center;
+}
+
+#content{
+	max-width: 1024px;
+
+	margin: auto;
+
+	padding-left: 3em;
+	padding-right: 3em;
+	padding-top: 5em;
+	padding-bottom: 5em;
+
+	text-align: justify;
+	text-align-last: none;
+}
+
+
+/* === font stuff === */
+body{
+	font-family: "Computer Modern";
 }
