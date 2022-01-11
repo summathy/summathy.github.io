@@ -4,8 +4,8 @@
 
 /* default colors */
 body{
-	color:  #222;
-	background-color:  #ddd;
+	color: #222;
+	background-color: #ddd;
 }
 #content{
 	background-color: #fff;
@@ -14,8 +14,8 @@ body{
 
 /* dark-mode colors */
 body.dark-theme{
-	color:  #ddd;
-	background-color:  #111;
+	color: #ddd;
+	background-color: #111;
 }
 #content.dark-theme{
 	background-color: #262626;
@@ -23,11 +23,11 @@ body.dark-theme{
 }
 
 /* in case user has dark-mode at OS-level */
-@media(prefers-color-scheme:  dark){
+@media(prefers-color-scheme: dark){
 	/* default colors */
 	body{
-		color:  #ddd;
-		background-color:  #111;
+		color: #ddd;
+		background-color: #111;
 	}
 	#content{
 		background-color: #262626;
@@ -36,8 +36,8 @@ body.dark-theme{
 
 	/* light-mode colors */
 	body.light-theme{
-		color:  #222;
-		background-color:  #fff;
+		color: #222;
+		background-color: #ddd;
 	}
 	#content.light-theme{
 		background-color: #fff;
