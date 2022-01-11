@@ -9,15 +9,17 @@ body{
 }
 #content{
 	background-color: #fff;
+	box-shadow: 2px 2px 3px #888;
 }
 
 /* dark-mode colors */
 body.dark-theme{
 	color:  #ddd;
-	background-color:  #000;
+	background-color:  #111;
 }
 #content.dark-theme{
 	background-color: #262626;
+	box-shadow: 2px 2px 3px #000;
 }
 
 /* in case user has dark-mode at OS-level */
@@ -25,10 +27,11 @@ body.dark-theme{
 	/* default colors */
 	body{
 		color:  #ddd;
-		background-color:  #000;
+		background-color:  #111;
 	}
 	#content{
 		background-color: #262626;
+		box-shadow: 2px 2px 3px #000;
 	}
 
 	/* light-mode colors */
@@ -38,6 +41,7 @@ body.dark-theme{
 	}
 	#content.light-theme{
 		background-color: #fff;
+		box-shadow: 2px 2px 3px #888;
 	}
 }
 

@@ -22,6 +22,7 @@ function parseXML(path){
 	// TODO read and change title
 	// TODO add paragraphs
 	// TODO parse diagrams
+	// TODO generate TOC
 
 	/* write content */
 	var contentDiv = document.getElementById("content");
