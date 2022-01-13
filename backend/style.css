@@ -7,7 +7,7 @@ body{
 	color: #222;
 	background-color: #ddd;
 }
-#content{
+.post{
 	background-color: #fff;
 	box-shadow: 2px 2px 3px #888;
 }
@@ -17,7 +17,7 @@ body.dark-theme{
 	color: #ddd;
 	background-color: #111;
 }
-#content.dark-theme{
+.post.dark-theme{
 	background-color: #262626;
 	box-shadow: 2px 2px 3px #000;
 }
@@ -29,7 +29,7 @@ body.dark-theme{
 		color: #ddd;
 		background-color: #111;
 	}
-	#content{
+	.post{
 		background-color: #262626;
 		box-shadow: 2px 2px 3px #000;
 	}
@@ -39,7 +39,7 @@ body.dark-theme{
 		color: #222;
 		background-color: #ddd;
 	}
-	#content.light-theme{
+	.post.light-theme{
 		background-color: #fff;
 		box-shadow: 2px 2px 3px #888;
 	}
@@ -48,24 +48,35 @@ body.dark-theme{
 
 
 /* === div stuff === */
-#navigation{
-	max-width: 1024px;
 
-	margin: auto;
+#navigation{
+	background-color: black;
+	box-shadow: 2px 2px 3px #888;
+
+	margin-bottom: 1em;
 
 	padding: 1em;
 
 	text-align: center;
 }
 
-#content{
+#wrapper{
 	max-width: 1024px;
-
 	margin: auto;
+}
+
+#impressum{
+	margin-top: 1em;
+
+	text-align: right;
+}
+
+.post{
+	margin-bottom: 1em;
 
 	padding-left: 3em;
 	padding-right: 3em;
-	padding-top: 5em;
+	padding-top: 2em;
 	padding-bottom: 5em;
 
 	text-align: justify;

@@ -9,15 +9,17 @@ function parseXML(path){
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.open("GET", path, false);
 		xmlhttp.send();
-		if(xmlhttp.status == 200){
-			contentString = xmlhttp.responseText;
-		}
+		contentString = xmlhttp.responseText;
 	}catch(e){
-		contentString = "<h2>Section</h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.";
-		alert("Ups, something went wrong :(");
+		contentString = "<h2>Error</h2> Ups, something went wrong :(";
 	}
 
 	/* parse XML */
+
+	parser = new DOMParser();
+	xmlDoc = parser.parseFromString(contentString, "text/xml");
+	console.log(xmlDoc.documentElement);
+	contentString = parseDOM(xmlDoc.documentElement);
 
 	// TODO read and change title
 	// TODO add paragraphs
@@ -27,4 +29,37 @@ function parseXML(path){
 	/* write content */
 	var contentDiv = document.getElementById("content");
 	contentDiv.innerHTML += contentString;
+}
+
+function parseDOM(node){
+	var type = node.nodeName;
+	var prefix = '';
+	var infix = '';
+	var postfix = '';
+
+	if(type == "post"){
+		prefix = "<div class='post'>";
+		postfix = "</div>";
+	}else if(type == "section"){
+		prefix = "<h2>";
+		postfix = "</h2>";
+	}else if(type == "#text"){
+		if(node.nodeValue != null){
+			infix = node.nodeValue;
+		}
+	}else{
+		prefix = "<" + type;
+		for(let attribute of node.attributes){
+			prefix += " " + attribute.name + "=" + attribute.value;
+		}
+		prefix += ">";
+
+		postfix = "</" + type + ">";
+	}
+
+	for(let child of node.childNodes){
+		infix += parseDOM(child);
+	}
+
+	return prefix + infix + postfix;
 }
