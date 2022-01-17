@@ -1,47 +1,74 @@
-/* === Light- and Dark-Mode === */
+/* === Color stuff === */
 
 /* TODO link + environment colors */
 
+:root{
+	--dark-background: #111;
+	--dark-post-background: #262626;
+	--dark-post-shadow: #000;
+	--dark-text: #ccc;
+	--dark-section: #992600;
+
+	--light-background: #ddd;
+	--light-post-background: #fff;
+	--light-post-shadow: #888;
+	--light-text: #222;
+	--light-section: #992600;
+}
+
+
 /* default colors */
 body{
-	color: #222;
-	background-color: #ddd;
+	background-color: var(--light-background);
+	color: var(--light-text);
 }
 .post{
-	background-color: #fff;
-	box-shadow: 2px 2px 3px #888;
+	background-color: var(--light-post-background);
+	box-shadow: 2px 2px 3px var(--light-post-shadow);
+}
+h2{
+	color: var(--light-section);
 }
 
 /* dark-mode colors */
 body.dark-theme{
-	color: #ddd;
-	background-color: #111;
+	background-color: var(--dark-background);
+	color: var(--dark-text);
 }
 .post.dark-theme{
-	background-color: #262626;
-	box-shadow: 2px 2px 3px #000;
+	background-color: var(--dark-post-background);
+	box-shadow: 2px 2px 3px var(--dark-post-shadow);
+}
+h2.dark-theme{
+	color: var(--dark-section);
 }
 
 /* in case user has dark-mode at OS-level */
 @media(prefers-color-scheme: dark){
 	/* default colors */
 	body{
-		color: #ddd;
-		background-color: #111;
+		background-color: var(--dark-background);
+		color: var(--dark-text);
 	}
 	.post{
-		background-color: #262626;
-		box-shadow: 2px 2px 3px #000;
+		background-color: var(--dark-post-background);
+		box-shadow: 2px 2px 3px var(--dark-post-shadow);
+	}
+	h2{
+		color: var(--dark-section);
 	}
 
 	/* light-mode colors */
 	body.light-theme{
-		color: #222;
-		background-color: #ddd;
+		background-color: var(--light-background);
+		color: var(--light-text);
 	}
 	.post.light-theme{
-		background-color: #fff;
-		box-shadow: 2px 2px 3px #888;
+		background-color: var(--light-post-background);
+		box-shadow: 2px 2px 3px var(--light-post-shadow);
+	}
+	h2.light-theme{
+		color: var(--light-section);
 	}
 }
 
