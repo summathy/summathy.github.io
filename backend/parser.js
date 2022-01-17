@@ -29,6 +29,8 @@ function parseXML(path){
 	/* write content */
 	var contentDiv = document.getElementById("content");
 	contentDiv.innerHTML += contentString;
+
+	MathJax.typeset();
 }
 
 function parseDOM(node){
@@ -45,7 +47,7 @@ function parseDOM(node){
 		postfix = "</h2>";
 	}else if(type == "#text"){
 		if(node.nodeValue != null){
-			infix = node.nodeValue;
+			infix = parseText(node.nodeValue);
 		}
 	}else{
 		prefix = "<" + type;
@@ -62,4 +64,17 @@ function parseDOM(node){
 	}
 
 	return prefix + infix + postfix;
+}
+
+function parseText(text){
+	var result = "";
+	var paragraphs = text.split("\n\n");
+	if(paragraphs.length > 1){
+		for(let paragraph of paragraphs){
+			result += "<p>" + paragraph + "</p>\n";
+		}	
+	}else{
+		result = text;
+	}
+	return result;
 }
