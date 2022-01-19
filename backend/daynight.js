@@ -3,6 +3,7 @@ function toggleDayNight(){
 	if (prefersDarkScheme.matches) {
 		document.body.classList.toggle('light-theme');
 		for(let element of document.getElementsByClassName('post')){
+			console.log(element);
 			element.classlist.toggle('light-theme');
 		}
 		// TODO sections
