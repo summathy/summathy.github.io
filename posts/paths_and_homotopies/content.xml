@@ -1,0 +1,16 @@
+<body>
+	<post>
+		<title>Paths and Homotopies</title>
+		<abstract>
+			A naive way to compare things is by "moving" one into the other along some <i>path</i>. This geometric intuition can be made precise in an arbitrary category by means of maps out of an <i>interval</i>. In this post, we discuss this construction in various categories
+		</abstract>
+
+		<section>Paths</section>
+
+		<subsection>Example: Topological Spaces</subsection>
+
+		<subsection>Example: Categories</subsection>
+
+		<subsection>Example: Chain Complexes</subsection>
+	</post>
+</body>
