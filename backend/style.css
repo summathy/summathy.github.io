@@ -22,6 +22,9 @@ body{
 	background-color: var(--light-background);
 	color: var(--light-text);
 }
+#navigation{
+	box-shadow: 2px 2px 3px var(--light-post-shadow);
+}
 .post{
 	background-color: var(--light-post-background);
 	box-shadow: 2px 2px 3px var(--light-post-shadow);
@@ -34,6 +37,9 @@ h2{
 body.dark-theme{
 	background-color: var(--dark-background);
 	color: var(--dark-text);
+}
+#navigation.dark-theme{
+	box-shadow: 2px 2px 3px var(--dark-post-shadow);
 }
 .post.dark-theme{
 	background-color: var(--dark-post-background);
@@ -50,6 +56,9 @@ h2.dark-theme{
 		background-color: var(--dark-background);
 		color: var(--dark-text);
 	}
+	#navigation{
+		box-shadow: 2px 2px 3px var(--dark-post-shadow);
+	}
 	.post{
 		background-color: var(--dark-post-background);
 		box-shadow: 2px 2px 3px var(--dark-post-shadow);
@@ -62,6 +71,9 @@ h2.dark-theme{
 	body.light-theme{
 		background-color: var(--light-background);
 		color: var(--light-text);
+	}
+	#navigation.light-theme{
+		box-shadow: 2px 2px 3px var(--light-post-shadow);
 	}
 	.post.light-theme{
 		background-color: var(--light-post-background);
@@ -77,14 +89,56 @@ h2.dark-theme{
 /* === spacing stuff === */
 
 #navigation{
-	background-color: black;
-	box-shadow: 2px 2px 3px #888;
+	background-color: #333;
 
 	margin-bottom: 1em;
 
-	padding: 1em;
-
 	text-align: center;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-link{
+	color: var(--dark-text);
+
+	padding-left: .25em;
+	padding-right: .25em;
+
+	text-decoration: none;
+
+	font-size: 1.5em;
+}
+
+.nav-left{
+	height: 80px;
+	width: 150px;
+	min-width: 80px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	float: left;
+}
+
+.nav-center{
+	/*width: 824px;*/
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-right{
+	width: 150px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	float: right;
 }
 
 #wrapper{

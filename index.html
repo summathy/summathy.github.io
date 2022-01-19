@@ -3,6 +3,8 @@
 <head>
 	<title>Summathy</title>
 
+	<meta name="viewport" content="width=device-width">
+
 	<!-- favicon stuff -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -26,10 +28,17 @@
 <body onload="parseXML('content.xml');">
 	<div id="wrapper">
 		<div id="navigation">
-			<a href="index.html">Home</a>
-			<a href="archive.html">Archive</a>
-			<a href="about.html">About</a>
-			<button class="btn-toggle" onclick="toggleDayNight();">Toggle Light- and Dark Mode</button>
+			<div class="nav-left">
+				<img src="backend/sum256.png" alt="summathy icon" style="width:50px;height:50px;">
+			</div>
+			<div class="nav-center">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="archive.html" class="nav-link">Archive</a>
+				<a href="about.html" class="nav-link">About</a>
+			</div>
+			<div class="nav-right">
+				<button class="btn-toggle" onclick="toggleDayNight();">Day/Night</button>
+			</div>
 		</div>
 		<div id="content"></div>
 		<div id="impressum">© Jonas Linssen 2022</div>
