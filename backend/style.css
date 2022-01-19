@@ -109,6 +109,10 @@ h2.dark-theme{
 
 	font-size: 1.5em;
 }
+.nav-link:hover{
+	/*background-color: black;*/
+	color: white;
+}
 
 .nav-left{
 	height: 80px;
@@ -118,8 +122,6 @@ h2.dark-theme{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	float: left;
 }
 
 .nav-center{
@@ -137,8 +139,6 @@ h2.dark-theme{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	float: right;
 }
 
 #wrapper{
