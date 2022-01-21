@@ -20,15 +20,6 @@
 		x
 		\end{equation}
 
-
-		\begin{xy}
-		\xymatrix @=4pc {
-		  x \ruppertwocell^f{\alpha}
-		    \ar^(0.35){f'}[r]
-		    \rlowertwocell_{f''}{\alpha'}& y
-		}
-		\end{xy}
-
 		<a href="google.de">GOOGLE</a>
 	</post>
 </body>

@@ -1,20 +1,6 @@
 /* === Color stuff === */
 
-/* TODO link + environment colors */
-
 :root{
-	--dark-background: #111;
-	--dark-post-background: #262626;
-	--dark-post-shadow: #000;
-	--dark-text: #ccc;
-	--dark-section: #992600;
-
-	--light-background: #ddd;
-	--light-post-background: #fff;
-	--light-post-shadow: #888;
-	--light-text: #222;
-	--light-section: #992600;
-
 	--background: #ddd;
 	--post-background: #fff;
 	--post-shadow: #888;
@@ -53,83 +39,6 @@ g{
 	stroke: var(--text) !important;
 }
 
-/* default colors
-body{
-	background-color: var(--light-background);
-	color: var(--light-text);
-}
-#navigation{
-	box-shadow: 2px 2px 3px var(--light-post-shadow);
-}
-.post{
-	background-color: var(--light-post-background);
-	box-shadow: 2px 2px 3px var(--light-post-shadow);
-}
-h2{
-	color: var(--light-section);
-}
-mjx-xypic-object{
-	color: var(--light-text) !important;
-}
-g{
-	stroke: var(--light-text) !important;
-}
-
-/* dark-mode colors
-body.dark-theme{
-	background-color: var(--dark-background);
-	color: var(--dark-text);
-}
-#navigation.dark-theme{
-	box-shadow: 2px 2px 3px var(--dark-post-shadow);
-}
-.post.dark-theme{
-	background-color: var(--dark-post-background);
-	box-shadow: 2px 2px 3px var(--dark-post-shadow);
-}
-h2.dark-theme{
-	color: var(--dark-section);
-}
-svg.dark-theme{
-	filter: invert(100%);
-}
-
-/* in case user has dark-mode at OS-level
-@media(prefers-color-scheme: dark){
-	/* default colors
-	body{
-		background-color: var(--dark-background);
-		color: var(--dark-text);
-	}
-	#navigation{
-		box-shadow: 2px 2px 3px var(--dark-post-shadow);
-	}
-	.post{
-		background-color: var(--dark-post-background);
-		box-shadow: 2px 2px 3px var(--dark-post-shadow);
-	}
-	h2{
-		color: var(--dark-section);
-	}
-
-	/* light-mode colors
-	body.light-theme{
-		background-color: var(--light-background);
-		color: var(--light-text);
-	}
-	#navigation.light-theme{
-		box-shadow: 2px 2px 3px var(--light-post-shadow);
-	}
-	.post.light-theme{
-		background-color: var(--light-post-background);
-		box-shadow: 2px 2px 3px var(--light-post-shadow);
-	}
-	h2.light-theme{
-		color: var(--light-section);
-	}
-}*/
-
-
 
 /* === spacing stuff === */
 
@@ -145,7 +54,7 @@ svg.dark-theme{
 }
 
 .nav-link{
-	color: var(--dark-text);
+	color: #ccc;
 
 	padding-left: .25em;
 	padding-right: .25em;
@@ -200,8 +109,8 @@ svg.dark-theme{
 .post{
 	margin-bottom: 1em;
 
-	padding-left: 3em;
-	padding-right: 3em;
+	padding-left: 3%;
+	padding-right: 3%;
 	padding-top: 2em;
 	padding-bottom: 5em;
 
