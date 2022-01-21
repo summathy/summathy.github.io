@@ -1,7 +1,11 @@
 <body>
 	<post>
 		<section>The Summathy Blog</section>
-		This is a blog about mathematics. The site is currently under construction and may 
+		This is a blog about mathematics. The site is currently under construction.
+
+		In the following the various posts are listed, sorted from latest to oldest. In the Archive, the posts are sorted by categories. 
+
+		This website is built upon MathJax, XyJax and other javascript libraries. There may be problems with older browsers or those with javascript disabled.
 	</post>
 	<post>
 		<section>§ Recent Posts</section>

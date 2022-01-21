@@ -30,8 +30,6 @@ function parseXML(path){
 	var contentDiv = document.getElementById("content");
 	contentDiv.innerHTML += contentString;
 
-	console.log(contentDiv);
-
 	MathJax.typeset();
 }
 
@@ -50,7 +48,6 @@ function parseDOM(node){
 	}else if(type == "#text"){
 		if(node.nodeValue != null){
 			infix = parseText(node.nodeValue);
-			console.log(infix);
 		}
 	}else{
 		prefix = "<" + type;
