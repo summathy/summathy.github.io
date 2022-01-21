@@ -1,7 +1,7 @@
 <body>
 	<post>
 		<section>The Summathy Blog</section>
-		This is a blog about mathematics. The site is currently under construction.
+		This is a blog about mathematics. The site is currently under construction and may 
 	</post>
 	<post>
 		<section>§ Recent Posts</section>
@@ -19,6 +19,15 @@
 		\begin{equation}
 		x
 		\end{equation}
+
+
+		\begin{xy}
+		\xymatrix @=4pc {
+		  x \ruppertwocell^f{\alpha}
+		    \ar^(0.35){f'}[r]
+		    \rlowertwocell_{f''}{\alpha'}& y
+		}
+		\end{xy}
 
 		<a href="google.de">GOOGLE</a>
 	</post>

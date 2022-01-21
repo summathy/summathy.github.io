@@ -18,6 +18,17 @@
 
 	<!-- mathjax stuff -->
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script>
+	  MathJax = {
+	    loader: {
+	      load: ['[custom]/xypic.js'],
+	      paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+	    },
+	    tex: {
+	      packages: {'[+]': ['xypic']}
+	    }
+	  };
+	</script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 	<!-- styling and scripts -->
@@ -34,14 +45,32 @@
 			<div class="nav-center">
 				<a href="index.html" class="nav-link">Home</a>
 				<a href="archive.html" class="nav-link">Archive</a>
-				<a href="about.html" class="nav-link">About</a>
+				<a href="about.html" class="nav-link">Author</a>
 			</div>
 			<div class="nav-right">
-				<button class="btn-toggle" onclick="toggleDayNight();">Day/Night</button>
+				<button class="btn-toggle" onclick="toggleDarkmode();">Day/Night</button>
 			</div>
 		</div>
-		<div id="content"></div>
+		<div id="content">
+
+		\begin{equation*}
+		\begin{xy}
+		\xymatrix @=4pc {
+		  x \ruppertwocell^f{\alpha}
+		    \ar^(0.35){f'}[r]
+		    \rlowertwocell_{f''}{\alpha'}
+		& y
+		}
+		\end{xy} = \begin{xy}
+		\xymatrix @=4pc {
+		  x \rtwocell^f_{f''}{*[r]{\scriptstyle \alpha'\cdot\alpha}}
+		& y
+		}
+		\end{xy}
+		\end{equation*}
+	</div>
 		<div id="impressum">© Jonas Linssen 2022</div>
 	</div>
 </body>
+<script type="text/javascript" src="backend/darkmode.js"></script>
 </html>

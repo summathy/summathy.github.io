@@ -14,10 +14,46 @@
 	--light-post-shadow: #888;
 	--light-text: #222;
 	--light-section: #992600;
+
+	--background: #ddd;
+	--post-background: #fff;
+	--post-shadow: #888;
+
+	--text: #222;
+	--section: #992600;
 }
 
+.darkmode{
+	--background: #111;
+	--post-background: #262626;
+	--post-shadow: #000;
 
-/* default colors */
+	--text: #ccc;
+	--section: #992600;
+}
+
+body{
+	background-color: var(--background);
+	color: var(--text);
+}
+#navigation{
+	box-shadow: 2px 2px 3px var(--post-shadow);
+}
+.post{
+	background-color: var(--post-background);
+	box-shadow: 2px 2px 3px var(--post-shadow);
+}
+h2,h3,h4{
+	color: var(--section);
+}
+mjx-xypic-object{
+	color: var(--text) !important;
+}
+g{
+	stroke: var(--text) !important;
+}
+
+/* default colors
 body{
 	background-color: var(--light-background);
 	color: var(--light-text);
@@ -32,8 +68,14 @@ body{
 h2{
 	color: var(--light-section);
 }
+mjx-xypic-object{
+	color: var(--light-text) !important;
+}
+g{
+	stroke: var(--light-text) !important;
+}
 
-/* dark-mode colors */
+/* dark-mode colors
 body.dark-theme{
 	background-color: var(--dark-background);
 	color: var(--dark-text);
@@ -48,10 +90,13 @@ body.dark-theme{
 h2.dark-theme{
 	color: var(--dark-section);
 }
+svg.dark-theme{
+	filter: invert(100%);
+}
 
-/* in case user has dark-mode at OS-level */
+/* in case user has dark-mode at OS-level
 @media(prefers-color-scheme: dark){
-	/* default colors */
+	/* default colors
 	body{
 		background-color: var(--dark-background);
 		color: var(--dark-text);
@@ -67,7 +112,7 @@ h2.dark-theme{
 		color: var(--dark-section);
 	}
 
-	/* light-mode colors */
+	/* light-mode colors
 	body.light-theme{
 		background-color: var(--light-background);
 		color: var(--light-text);
@@ -82,7 +127,7 @@ h2.dark-theme{
 	h2.light-theme{
 		color: var(--light-section);
 	}
-}
+}*/
 
 
 
