@@ -1,6 +1,116 @@
-<!DOCTYPE html>
 <html>
-<body>
-<h1>The Summathy Blog - Temp</h1>
+<head>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script>
+	  MathJax = {
+	    loader: {
+	      load: ['[custom]/xypic.js'],
+	      paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+	    },
+	    tex: {
+	      packages: {'[+]': ['xypic']}
+	    }
+	  };
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js">
+		
+	</script>
+
+	<script type="text/javascript">
+		function load(){
+			var path="content.md";
+
+			/* read file */
+			var text = "";
+			var location = window.location.href;
+			var dirpath = location.substring(0,location.lastIndexOf("/")+1);
+			
+			try{
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.open("GET", path, false);
+				xmlhttp.send();
+				text = xmlhttp.responseText;
+			}catch(e){
+				text = "<h2>Error</h2> Ups, something went wrong :(";
+			}
+
+			/* escape math */
+
+			/* convert markdown */
+			var converter = new showdown.Converter();
+
+
+/*var latexCodeBlocks = [];
+
+  showdown.extension('mathjax', function () {
+    return [
+      {
+        type:    'lang',
+        regex:   '(?:^|\\n)~D~D(.*)\\n([\\s\\S]*?)\\n~D~D',
+        replace: function (match, leadingSlash, codeblock) {
+          // Check if we matched the leading \ and return nothing changed if so
+          if (leadingSlash === '\\') {
+            return match;
+          } else {
+            return '\n\n~Z' + (latexCodeBlocks.push({text: match.substring(1), codeblock: codeblock}) - 1) + 'Z\n\n';
+          }
+        }
+      },
+
+      {
+        type:    'lang',
+        regex:   '~D([^`\\f\\n\\r]+?)~D',
+        replace: function (match, leadingSlash, codeblock) {
+          // Check if we matched the leading \ and return nothing changed if so
+          if (leadingSlash === '\\') {
+            return match;
+          } else {
+            return '~Z' + (latexCodeBlocks.push({text: match, codeblock: codeblock}) - 1) + 'Z';
+          }
+        }
+      },
+
+      {
+        type:    'output',
+        regex:   '~(Z)(\\d+)\\1',
+        replace: function (match, leadingSlash, index) {
+          // Check if we matched the leading \ and return nothing changed if so
+          if (leadingSlash === '\\') {
+            return match;
+          } else {
+            index = Number(index);
+            var code = latexCodeBlocks[index].text;
+            return code.replace(/~D/g, '$$');
+          }
+        }
+      },
+
+      // 清除缓存
+      // clear cache
+      {
+        type: 'output',
+        filter: function (text, globals_converter, options) {
+          latexCodeBlocks = [];
+
+          return text;
+        }
+      },
+
+    ];
+  });*/
+
+
+
+		    html = converter.makeHtml(text);
+
+		    /* add to page and reset */
+		    document.body.innerHTML += html;
+		    MathJax.typeset();
+		}
+	</script>
+</head>
+<body onload="load();">
 </body>
 </html>
