@@ -3,27 +3,16 @@
 		<section>The Summathy Blog</section>
 		This is a blog about mathematics. The site is currently under construction.
 
-		In the following the various posts are listed, sorted from latest to oldest. In the Archive, the posts are sorted by categories. 
-
 		This website is built upon MathJax, XyJax and other javascript libraries. There may be problems with older browsers or those with javascript disabled.
 	</post>
 	<post>
-		<section>§ Recent Posts</section>
-		Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. $x^2$ and
+		<section>§ Test</section>
+		$x^2$ and 
 		$$e^{i\pi}+1=0$$
-		What about \(y^2\)?
-	</post>
-	<post>
-		<section>§ Posts by Categories</section>
-
-		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-
-		Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-
+		What about \(y^2\)
+		or
 		\begin{equation}
-		x
+		x^3
 		\end{equation}
-
-		<a href="google.de">GOOGLE</a>
 	</post>
 </body>

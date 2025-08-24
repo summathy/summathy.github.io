@@ -8,6 +8,7 @@ The website is currently under construction, so there might be issues like broke
 
 $$ x^4 - 2x + 3 = 0 $$
 
+What happens, if I put an equation $y=x^2+2$ into plain text? What if I put it into 
 
 $$
 \begin{xy}
