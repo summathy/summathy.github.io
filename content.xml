@@ -1,12 +1,14 @@
 <body>
 	<post>
 		<section>The Summathy Blog</section>
-		This is a blog about mathematics. The site is currently under construction.
+		This is a blog about mathematics. The site is currently under construction. For the time being it serves as a place to keep a short mathematical diary, recording whatever I though about and/or learned during the week. However I hope to expand the scope of this blog with videos and notes in the future.
 
 		This website is built upon MathJax, XyJax and other javascript libraries. There may be problems with older browsers or those with javascript disabled.
 	</post>
 	<post>
-		<section>§ Test</section>
+		<section>Dayly Ramblings</section>
+		<b>25.Aug.25</b> There is a functor-homology description of $\Bbb{E}_n$-homology developed extensively in <a href="test"></a>
+
 		$x^2$ and 
 		$$e^{i\pi}+1=0$$
 		What about \(y^2\)
