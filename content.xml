@@ -7,14 +7,8 @@
 	</post>
 	<post>
 		<section>Dayly Ramblings</section>
-		<b>25.Aug.25</b> There is a functor-homology description of $\Bbb{E}_n$-homology developed extensively in <a href="test"></a>
 
-		$x^2$ and 
-		$$e^{i\pi}+1=0$$
-		What about \(y^2\)
-		or
-		\begin{equation}
-		x^3
-		\end{equation}
+		<b>25.Aug.25</b><br/>
+		There is a functor-homology description of $\Bbb{E}_n$-homology developed extensively by <a href="https://arxiv.org/abs/0810.5147">Fresse</a>, <a href="https://arxiv.org/abs/1412.6032">Fresse-Ziegenhagen</a>, <a href="https://arxiv.org/abs/1412.6031">Ziegenhagen</a> and <a href="https://arxiv.org/abs/0907.1283">Livernet-Richter</a>. It is based on a category $\mathsf{Epi}_n$, which should be related to the operator category of Batanin's pruned n-trees. Can we recover the (multi)complex defined by Livernet-Richter via the morphism of operator categories $\Bbb{O}^{\times n} \rightarrow \Bbb{O}^{\wr n}$?
 	</post>
 </body>
