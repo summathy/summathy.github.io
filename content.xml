@@ -7,10 +7,11 @@
 	</post>
 	<post>
 		<section>Dayly Ramblings</section>
+		
 		<b>25.Aug.25</b><br/>
 		There is a functor-homology description of $\Bbb{E}_n$-homology developed extensively by <a href="https://arxiv.org/abs/0810.5147">Fresse</a>, <a href="https://arxiv.org/abs/1412.6032">Fresse-Ziegenhagen</a>, <a href="https://arxiv.org/abs/1412.6031">Ziegenhagen</a> and <a href="https://arxiv.org/abs/0907.1283">Livernet-Richter</a>. It is based on a category $\mathsf{Epi}_n$, which should be related to the operator category of Batanin's pruned n-trees. Can we recover the (multi)complex defined by Livernet-Richter via the morphism of operator categories $\Bbb{O}^{\times n} \rightarrow \Bbb{O}^{\wr n}$?
 
-		<b>26.Aug.25<b><br/>
+		<b>26.Aug.25</b><br/>
 		In <a href="https://arxiv.org/abs/0909.5447">Fresse</a> it is shown that the dg-enhancement of the category $\mathsf{Epi}_n$ is Koszul. Explicitly this means the following: Considering dg-categories as monoid allows for a Bar-Cobar adjunction between dg-categories and dg-cocategories. Fresse uses this general framework to prove that an ad-hoc defined <i>Koszul-dual</i> dg-category of $\mathsf{Epi}_n$ is in fact a minimal model in the sense that it arises from a quasi-isomorphic sub-dg-cocategory of the Bar-construction. <a href="https://arxiv.org/abs/1102.3622">Livernet</a> shows a similar statement for a category of trees, which is used to define operads themselves. It is plausible that there is a general framework of Koszul-categories, which is closed under wreath products and the plus construction, streamlining the proofs of Fresse and Livernet...
 	</post>
 </body>
